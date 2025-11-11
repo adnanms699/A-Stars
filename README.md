@@ -1,18 +1,21 @@
-# Zpire 2026 - Vibe Coding Challenge
+# Zpire - University Wellness Tracker
 
-A modern, responsive landing page for the Alibaba Cloud Zpire 2026 Vibe Coding Challenge. Built with React, TypeScript, Tailwind CSS, and powered by AI-assisted development tools.
+A modern, AI-powered wellness tracking platform for university students. Like a Fitbit for your academic journey, Zpire helps you monitor and optimize your mental, psychological, and physical wellbeing throughout university life.
 
-## 🚀 About Vibe Coding
+## 🎯 About Zpire
 
-Vibe coding is an AI-assisted software development approach using Alibaba Cloud's Tongyi Lingma. It enables developers to code smarter, ship faster, and collaborate effortlessly with AI as a pair programmer.
+Zpire is your personal development companion that tracks holistic wellness across three essential dimensions:
+- **Mental Ring**: Academic growth, cognitive challenges, skill development
+- **Psychological Ring**: Emotional wellness, stress management, work-life balance  
+- **Physical Ring**: Physical activity, health habits, lifestyle maintenance
 
-## ✨ Features
+## ✨ Key Features
 
-- **Modern Design**: Beautiful gradient backgrounds, smooth animations, and responsive layout
-- **AI-Focused**: Showcases AI-powered development capabilities
-- **SEO Optimized**: Proper meta tags, semantic HTML, and optimized content
-- **GitHub Pages Ready**: Configured for easy deployment to GitHub Pages
-- **Performance**: Optimized images and efficient component architecture
+- **Smart Opportunity Discovery**: AI-powered web scraping finds relevant courses, events, clubs, and workshops
+- **Three Wellness Rings**: Comprehensive tracking across mental, psychological, and physical dimensions
+- **Personalized Insights**: AI assistant analyzes your patterns and provides tailored recommendations
+- **Real-Time Support**: Get timely notifications like "Take a break" or "Join this sustainability event"
+- **Holistic Dashboard**: See your complete wellness picture at a glance
 
 ## 🛠️ Tech Stack
 
@@ -65,26 +68,27 @@ The build output in `dist/` folder is ready to be deployed to any static hosting
 
 ```
 src/
-├── assets/          # Images and static assets
+├── assets/          # Images and wellness icons
 ├── components/      # React components
 │   ├── ui/         # Reusable UI components (buttons, cards, etc.)
-│   ├── Hero.tsx    # Hero section
-│   ├── Features.tsx # Features showcase
-│   ├── Benefits.tsx # Benefits section
-│   ├── CTA.tsx     # Call-to-action section
+│   ├── Hero.tsx    # Hero section with wellness rings
+│   ├── Features.tsx # Three wellness rings showcase
+│   ├── Benefits.tsx # Student benefits section
+│   ├── CTA.tsx     # Call-to-action for waitlist
 │   └── Footer.tsx  # Footer component
 ├── pages/          # Page components
 ├── lib/            # Utility functions
-└── index.css       # Global styles and design system
+└── index.css       # Global styles and wellness design system
 
 ## 🎨 Design System
 
-The project uses a comprehensive design system with:
-- **Primary Colors**: Cyan blue (#00B4D8) for tech/AI feel
-- **Secondary Colors**: Orange (#FF8C42) for Alibaba brand accents
-- **Custom Gradients**: Defined in CSS variables for consistency
-- **Animations**: Smooth transitions and floating elements
-- **Typography**: Modern, readable font stack
+The project uses a wellness-focused design system with:
+- **Primary Colors**: Green (#2D8659) for physical wellness
+- **Secondary Colors**: Purple (#7C3AED) for psychological wellness
+- **Accent Colors**: Blue (#3B82F6) for mental wellness
+- **Wellness Gradient**: Flowing gradient combining all three wellness colors
+- **Animations**: Smooth transitions, floating elements, and ring animations
+- **Typography**: Clean, modern font stack optimized for readability
 
 All design tokens are defined in `src/index.css` and `tailwind.config.ts`.
 

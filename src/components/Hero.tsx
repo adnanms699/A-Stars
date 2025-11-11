@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Code2, Sparkles, ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Activity, Sparkles, ArrowRight } from "lucide-react";
+import wellnessHero from "@/assets/wellness-hero.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(${heroBg})`,
+          backgroundImage: `url(${wellnessHero})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -20,8 +20,9 @@ const Hero = () => {
 
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-wellness-mental/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-wellness-psychological/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-wellness-physical/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
       </div>
 
       {/* Content */}
@@ -30,47 +31,57 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary backdrop-blur-sm">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">Alibaba Cloud Presents</span>
+            <span className="text-sm font-medium">Zpire 2026 - Powered by AI</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            <span className="block text-foreground">Zpire 2026</span>
-            <span className="block bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent mt-2">
-              Vibe Coding Challenge
+            <span className="block text-foreground">Your University</span>
+            <span className="block bg-gradient-wellness bg-clip-text text-transparent mt-2">
+              Wellness Tracker
             </span>
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Experience the future of software development with AI-powered coding. Build smarter, ship faster, and collaborate effortlessly using Alibaba Cloud's Tongyi Lingma.
+            Like a Fitbit for your academic journey. Track your mental, psychological, and physical wellness. 
+            Discover opportunities. Grow holistically.
           </p>
 
-          {/* Stats */}
+          {/* Wellness Rings Preview */}
           <div className="flex flex-wrap justify-center gap-8 pt-4">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">2026</div>
-              <div className="text-sm text-muted-foreground">Year of AI Coding</div>
+            <div className="text-center group cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-2 rounded-full border-4 border-wellness-mental flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-wellness-mental">M</span>
+              </div>
+              <div className="text-sm font-medium text-foreground">Mental</div>
+              <div className="text-xs text-muted-foreground">Challenge Your Brain</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-secondary">∞</div>
-              <div className="text-sm text-muted-foreground">Possibilities</div>
+            <div className="text-center group cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-2 rounded-full border-4 border-wellness-psychological flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-wellness-psychological">P</span>
+              </div>
+              <div className="text-sm font-medium text-foreground">Psychological</div>
+              <div className="text-xs text-muted-foreground">Balance Your Mind</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-accent">24/7</div>
-              <div className="text-sm text-muted-foreground">AI Assistance</div>
+            <div className="text-center group cursor-pointer">
+              <div className="w-20 h-20 mx-auto mb-2 rounded-full border-4 border-wellness-physical flex items-center justify-center group-hover:scale-110 transition-transform">
+                <span className="text-2xl font-bold text-wellness-physical">P</span>
+              </div>
+              <div className="text-sm font-medium text-foreground">Physical</div>
+              <div className="text-xs text-muted-foreground">Move Your Body</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button variant="hero" size="lg" className="text-lg group">
-              Get Started
+              Start Your Journey
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="hero-outline" size="lg" className="text-lg group">
-              <Code2 className="w-5 h-5" />
-              Learn More
+              <Activity className="w-5 h-5" />
+              See How It Works
             </Button>
           </div>
 

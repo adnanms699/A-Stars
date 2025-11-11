@@ -1,26 +1,29 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import aiIcon from "@/assets/ai-icon.png";
-import cloudIcon from "@/assets/cloud-icon.png";
-import collabIcon from "@/assets/collab-icon.png";
+import mentalIcon from "@/assets/mental-icon.png";
+import psychIcon from "@/assets/psych-icon.png";
+import physicalIcon from "@/assets/physical-icon.png";
 
 const features = [
   {
-    icon: aiIcon,
-    title: "AI-Powered Development",
-    description: "Leverage Tongyi Lingma's advanced AI to generate code from natural language, autocomplete with context awareness, and debug in real-time.",
-    highlights: ["Natural language to code", "Intelligent autocomplete", "Real-time debugging"]
+    icon: mentalIcon,
+    title: "Mental Ring",
+    color: "wellness-mental",
+    description: "Track your intellectual growth and cognitive challenges. Are you learning new things? Engaging in meaningful coursework? Pushing your boundaries?",
+    metrics: ["Course engagement", "Workshop attendance", "Skill development", "Academic projects"]
   },
   {
-    icon: cloudIcon,
-    title: "Cloud-Native Integration",
-    description: "Seamlessly integrate with Alibaba Cloud services. Deploy directly from your IDE with zero configuration required.",
-    highlights: ["One-click deployment", "Native cloud services", "Scalable infrastructure"]
+    icon: psychIcon,
+    title: "Psychological Ring",
+    color: "wellness-psychological",
+    description: "Monitor your emotional wellness and stress levels. Find balance between study, social life, and self-care. Stay in the healthy zone.",
+    metrics: ["Stress management", "Social connections", "Mindfulness activities", "Support resources"]
   },
   {
-    icon: collabIcon,
-    title: "Collaborative Coding",
-    description: "Work together with AI as your pair programmer. Get instant code explanations, suggestions, and optimizations.",
-    highlights: ["Pair programming with AI", "Code explanations", "Team collaboration"]
+    icon: physicalIcon,
+    title: "Physical Ring",
+    color: "wellness-physical",
+    description: "Maintain an active and healthy lifestyle. Track movement, sleep, and physical activities. Keep your body as sharp as your mind.",
+    metrics: ["Activity levels", "Sleep patterns", "Sports & fitness", "Wellness events"]
   }
 ];
 
@@ -30,11 +33,11 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            What is Vibe Coding?
+            Close Your Wellness Rings
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Vibe coding is an AI-assisted development approach that transforms how you create software. 
-            It's fast, intuitive, and collaborative—where you and AI work together like experienced pair programmers.
+            Just like fitness trackers monitor your physical activity, Zpire tracks your holistic university wellness 
+            across three essential dimensions of student life.
           </p>
         </div>
 
@@ -42,10 +45,13 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-xl group"
+              className="border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-xl group relative overflow-hidden"
             >
-              <CardHeader className="space-y-4">
-                <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              {/* Colored accent bar */}
+              <div className={`absolute top-0 left-0 right-0 h-1 bg-${feature.color}`} />
+              
+              <CardHeader className="space-y-4 pt-6">
+                <div className={`w-20 h-20 mx-auto rounded-2xl bg-${feature.color}/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                   <img 
                     src={feature.icon} 
                     alt={feature.title}
@@ -58,17 +64,63 @@ const Features = () => {
                 <CardDescription className="text-center text-base leading-relaxed">
                   {feature.description}
                 </CardDescription>
-                <ul className="space-y-2">
-                  {feature.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wide">Tracked Metrics</p>
+                  <div className="space-y-2">
+                    {feature.metrics.map((metric, idx) => (
+                      <div key={idx} className={`flex items-center gap-2 text-sm text-foreground`}>
+                        <div className={`w-1.5 h-1.5 rounded-full bg-${feature.color}`} />
+                        {metric}
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* How It Works */}
+        <div className="mt-20 max-w-4xl mx-auto">
+          <div className="p-8 rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-border/50">
+            <h3 className="text-2xl font-bold text-center mb-6 text-foreground">
+              How Zpire Tracks Your Wellness
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">1</div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Smart Discovery</p>
+                    <p className="text-muted-foreground">Web scraper finds opportunities: courses, events, clubs, workshops.</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">2</div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">AI Analysis</p>
+                    <p className="text-muted-foreground">MCP Assistant analyzes your activity patterns and wellness across all three rings.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">3</div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Personalized Insights</p>
+                    <p className="text-muted-foreground">Get tailored recommendations based on your unique patterns and goals.</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">4</div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Actionable Support</p>
+                    <p className="text-muted-foreground">"Take a break," "Join this event," "Try this meditation" - real-time guidance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
