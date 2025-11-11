@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+# Zpire 2026 - Vibe Coding Challenge
 
-## Project info
+A modern, responsive landing page for the Alibaba Cloud Zpire 2026 Vibe Coding Challenge. Built with React, TypeScript, Tailwind CSS, and powered by AI-assisted development tools.
 
-**URL**: https://lovable.dev/projects/87ca5490-534c-4962-80ea-df395c165a31
+## 🚀 About Vibe Coding
 
-## How can I edit this code?
+Vibe coding is an AI-assisted software development approach using Alibaba Cloud's Tongyi Lingma. It enables developers to code smarter, ship faster, and collaborate effortlessly with AI as a pair programmer.
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Modern Design**: Beautiful gradient backgrounds, smooth animations, and responsive layout
+- **AI-Focused**: Showcases AI-powered development capabilities
+- **SEO Optimized**: Proper meta tags, semantic HTML, and optimized content
+- **GitHub Pages Ready**: Configured for easy deployment to GitHub Pages
+- **Performance**: Optimized images and efficient component architecture
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/87ca5490-534c-4962-80ea-df395c165a31) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **Vite** - Fast build tool and dev server
+- **Shadcn/ui** - High-quality UI components
+- **Lucide React** - Beautiful icons
 
-**Use your preferred IDE**
+## 📦 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm installed
+- Git installed
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. Open your browser and visit `http://localhost:8080`
+
+## 🚀 Deployment
+
+This project is configured for easy deployment to GitHub Pages. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
+Quick deploy:
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The build output in `dist/` folder is ready to be deployed to any static hosting service.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```
+src/
+├── assets/          # Images and static assets
+├── components/      # React components
+│   ├── ui/         # Reusable UI components (buttons, cards, etc.)
+│   ├── Hero.tsx    # Hero section
+│   ├── Features.tsx # Features showcase
+│   ├── Benefits.tsx # Benefits section
+│   ├── CTA.tsx     # Call-to-action section
+│   └── Footer.tsx  # Footer component
+├── pages/          # Page components
+├── lib/            # Utility functions
+└── index.css       # Global styles and design system
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+The project uses a comprehensive design system with:
+- **Primary Colors**: Cyan blue (#00B4D8) for tech/AI feel
+- **Secondary Colors**: Orange (#FF8C42) for Alibaba brand accents
+- **Custom Gradients**: Defined in CSS variables for consistency
+- **Animations**: Smooth transitions and floating elements
+- **Typography**: Modern, readable font stack
 
-This project is built with:
+All design tokens are defined in `src/index.css` and `tailwind.config.ts`.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🔧 Available Scripts
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/87ca5490-534c-4962-80ea-df395c165a31) and click on Share -> Publish.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
 
-## Can I connect a custom domain to my Lovable project?
+## 🌐 Browser Support
 
-Yes, you can!
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project was created for the Alibaba Cloud Zpire 2026 Vibe Coding Challenge.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Support
+
+For questions or support, please visit:
+- [Alibaba Cloud Documentation](https://www.alibabacloud.com/help)
+- [Tongyi Lingma](https://www.alibabacloud.com/en/product/lingma)
+
+---
+
+Built with ❤️ using AI-assisted development and Alibaba Cloud Tongyi Lingma
