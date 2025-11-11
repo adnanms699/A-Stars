@@ -69,7 +69,7 @@ const Hero = () => {
                 <span className="text-2xl font-bold text-wellness-physical">P</span>
               </div>
               <div className="text-sm font-medium text-foreground">Physical</div>
-              <div className="text-xs text-muted-foreground">Move Your Body</div>
+              <div className="text-xs text-muted-foreground">Time & Body</div>
             </div>
           </div>
 

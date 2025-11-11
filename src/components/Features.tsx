@@ -22,8 +22,8 @@ const features = [
     icon: physicalIcon,
     title: "Physical Ring",
     color: "wellness-physical",
-    description: "Maintain an active and healthy lifestyle. Track movement, sleep, and physical activities. Keep your body as sharp as your mind.",
-    metrics: ["Activity levels", "Sleep patterns", "Sports & fitness", "Wellness events"]
+    description: "Maintain an active, healthy, and well-managed lifestyle. Track movement, sleep, physical activities, and how you manage your time. Balance productivity with wellbeing.",
+    metrics: ["Time management", "Activity levels", "Sleep patterns", "Sports & fitness"]
   }
 ];
 
@@ -36,7 +36,7 @@ const Features = () => {
             Close Your Wellness Rings
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Just like fitness trackers monitor your physical activity, Zpire tracks your holistic university wellness 
+            Just like fitness trackers monitor your physical activity, A-Stars tracks your holistic university wellness 
             across three essential dimensions of student life.
           </p>
         </div>
@@ -84,7 +84,7 @@ const Features = () => {
         <div className="mt-20 max-w-4xl mx-auto">
           <div className="p-8 rounded-3xl bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border border-border/50">
             <h3 className="text-2xl font-bold text-center mb-6 text-foreground">
-              How Zpire Tracks Your Wellness
+              How A-Stars Tracks Your Wellness
             </h3>
             <div className="grid md:grid-cols-2 gap-6 text-sm">
               <div className="space-y-3">

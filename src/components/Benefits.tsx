@@ -15,8 +15,8 @@ const benefits = [
   },
   {
     icon: Dumbbell,
-    title: "Stay Active & Healthy",
-    description: "Find sports clubs, gym classes, and outdoor activities. Track your movement patterns and get reminders to stay physically active.",
+    title: "Stay Active & Manage Your Time",
+    description: "Track how you spend your time, find sports clubs, gym classes, and outdoor activities. Get insights on time management and reminders to stay physically active and balanced.",
     color: "wellness-physical"
   },
   {
