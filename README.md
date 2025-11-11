@@ -1,10 +1,10 @@
-# Zpire - University Wellness Tracker
+# A-Stars - University Wellness Tracker
 
-A modern, AI-powered wellness tracking platform for university students. Like a Fitbit for your academic journey, Zpire helps you monitor and optimize your mental, psychological, and physical wellbeing throughout university life.
+A modern, AI-powered wellness tracking platform for university students. Like a Fitbit for your academic journey, A-Stars helps you monitor and optimize your mental, psychological, and physical wellbeing throughout university life.
 
-## 🎯 About Zpire
+## 🎯 About A-Stars
 
-Zpire is your personal development companion that tracks holistic wellness across three essential dimensions:
+A-Stars is your personal development companion that tracks holistic wellness across three essential dimensions:
 - **Mental Ring**: Academic growth, cognitive challenges, skill development
 - **Psychological Ring**: Emotional wellness, stress management, work-life balance  
 - **Physical Ring**: Physical activity, health habits, lifestyle maintenance
@@ -109,7 +109,7 @@ All design tokens are defined in `src/index.css` and `tailwind.config.ts`.
 
 ## 📄 License
 
-This project was created for the Alibaba Cloud Zpire 2026 Vibe Coding Challenge.
+This project was created for the Alibaba Cloud A-Stars 2026 Vibe Coding Challenge.
 
 ## 🤝 Contributing
 

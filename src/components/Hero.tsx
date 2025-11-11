@@ -31,7 +31,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary backdrop-blur-sm">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">Zpire 2026 - Powered by AI</span>
+            <span className="text-sm font-medium">A-Stars 2026 - Powered by AI</span>
           </div>
 
           {/* Main Heading */}

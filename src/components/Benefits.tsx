@@ -36,7 +36,7 @@ const Benefits = () => {
             Your Personal Development Companion
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stop juggling multiple apps and missing opportunities. Zpire brings everything together in one intelligent platform.
+            Stop juggling multiple apps and missing opportunities. A-Stars brings everything together in one intelligent platform.
           </p>
         </div>
 

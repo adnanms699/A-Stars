@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold bg-gradient-wellness bg-clip-text text-transparent">
-              Zpire
+              A-Stars
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Your Fitbit for university life. Track mental, psychological, and physical wellness holistically.
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Zpire. Made with 💚 for university students.
+            © {currentYear} A-Stars. Made with 💚 for university students.
           </p>
           <div className="flex gap-4">
             <a href="#" className="w-10 h-10 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center" aria-label="Email">
