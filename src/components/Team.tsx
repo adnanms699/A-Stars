@@ -2,7 +2,7 @@ import { Users } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Adrian",
+    name: "Adnan",
     description: "I have built a strong technical foundation through self-driven learning this summer by enhancing my existing Python skills with experiences like file handling(Python) and expanding my stack to include Bash(CLI), Git, GitHub, Tableau, and Excel. To bring my ideas to life, I have participated in a Generative AI hackathon for SDGs and an AlphaSights case competition. Further, I have hands-on experience in web development, having built and deployed personal websites using platforms like Squarespace and Bolt.new."
   },
   {
